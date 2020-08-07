@@ -1,2 +1,2 @@
-import BTree from "./tree.js"
+import BTree from "./arbol/tree.js"
 
