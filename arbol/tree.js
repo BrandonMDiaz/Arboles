@@ -1,6 +1,6 @@
 import Node from './node.js'
 
-class BTree{
+export class BTree{
 
 	constructor(){
 		this.root = null;
@@ -26,4 +26,3 @@ class BTree{
 		}
 	}
 }
-export BTree
