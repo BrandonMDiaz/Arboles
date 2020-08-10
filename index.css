@@ -1,0 +1,12 @@
+.treeDiv{
+	margin-top: 4%;
+	margin-left: 7.5%;
+	margin-right: 7.5%;
+	height: 80vh;
+	max-height: 80vh;
+	width: 85vw;
+	max-width: 85vw;
+	overflow: scroll;
+	/*background-color: black;*/
+}
+

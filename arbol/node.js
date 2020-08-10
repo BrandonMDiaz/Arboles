@@ -1,13 +1,10 @@
 //Implementacion de nodo para arbol binario
 export class Node {
 
-	constructor(){
-		this.val = null;
+	constructor(v = null){
+		this.val = v;
 		this.nodeR = null;
-		this.nodeL = null;
-	}
-	constructor(v){
-		this.val = v;		
+		this.nodeL = null;		
 	}
 
 	getData(){

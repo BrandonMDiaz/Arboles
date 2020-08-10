@@ -1,27 +1,31 @@
 import Node from './node.js'
-
+import Draw from '../draw.js';
 export class BTree{
 
-	constructor(){
+	constructor(draw){
 		this.root = null;
+		this.draw = draw;
 	}
 
 	isEmpty(){
 		return this.root == null;
 	}
+
 	insertData(val){
-		insertData(val,this.root);
+		this.InsertData(val,this.root,0,0);
 	}
-	insertData(val, node){
+
+	InsertData(val, node, direccion, profundidad){
 		if(node === null){
 			node = new Node(val);
+			this.draw.drawNode(direccion, profundidad);
 		}
 		else {
 			if (val < node.val){
-				insertData(val, node.getLeft());
+				this.InsertData(val, node.getLeft(),--direccion, ++profundidad);
 			}
 			else {
-				insertData(val, node.getRigth());
+				this.InsertData(val, node.getRigth(),++direccion, ++profundidad);
 			}
 		}
 	}
