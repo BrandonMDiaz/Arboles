@@ -1,5 +1,5 @@
 //Implementacion de nodo para arbol binario
-export class Node {
+export default class Node {
 
 	constructor(v = null){
 		this.val = v;

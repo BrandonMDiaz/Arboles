@@ -1,5 +1,5 @@
 import Node from './node.js'
-export class BTree{
+export default class BTree{
 
 	constructor(draw){
 		this.root = null;
