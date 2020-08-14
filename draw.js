@@ -1,4 +1,4 @@
-class Draw{
+export default class Draw{
 	constructor(canvas){
 		this.canvas = canvas;
 		this.context = this.canvas.getContext("2d");
