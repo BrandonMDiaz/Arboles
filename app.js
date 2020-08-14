@@ -1,8 +1,8 @@
-import BTree from "./arbol/tree.js"
-import Draw from "./draw.js"
+import BTree from "./arbol/tree.js";
+import Draw from "./draw.js";
 
 
-randomTree(){
+function randomTree(){
 	let draw = new Draw(document.getElementById("myCanvas"));
 	let tree = new BTree(draw);
 	let val = 0;

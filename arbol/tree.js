@@ -1,5 +1,4 @@
 import Node from './node.js'
-import Draw from '../draw.js';
 export class BTree{
 
 	constructor(draw){
